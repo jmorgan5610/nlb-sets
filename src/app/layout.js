@@ -1,4 +1,9 @@
-import GlobalStyles from "@/components/GlobalStyles";
+import { styled } from "@pigment-css/react";
+
+import "@pigment-css/react/styles.css";
+import "./globals.css";
+
+import data from "./_data/report.json";
 
 export const metadata = {
   title: "NLB Sets",
@@ -9,9 +14,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
-        <GlobalStyles />
+        <Wrapper>
+          {children}
+        </Wrapper>
       </body>
     </html>
   );
 }
+
+const Wrapper = styled.main`
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(85ch, 100%)
+    1fr;
+
+  & > * {
+    grid-column: 2;
+  }
+
+  margin-bottom: 64px;
+`;
