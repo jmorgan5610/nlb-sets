@@ -1,5 +1,6 @@
-import TopNav from "@/components/TopNav/TopNav";
+import TopNav from "@/components/TopNav";
 import SetsTable from "@/components/SetsTable";
+
 import data from "../_data/report.json";
 
 export function generateStaticParams() {

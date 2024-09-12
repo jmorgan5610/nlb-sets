@@ -1,9 +1,5 @@
-import { styled } from "@pigment-css/react";
-
-import "@pigment-css/react/styles.css";
+import { styled } from '@linaria/react';
 import "./globals.css";
-
-import data from "./_data/report.json";
 
 export const metadata = {
   title: "NLB Sets",

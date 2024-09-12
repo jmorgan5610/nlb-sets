@@ -1,7 +1,4 @@
-"use client";
-
-import React from "react";
-import { styled } from "@pigment-css/react";
+import { styled } from '@linaria/react';
 
 import PokePaste from "../PokePaste";
 

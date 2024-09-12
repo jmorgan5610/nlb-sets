@@ -1,17 +1,18 @@
-import { styled } from "@pigment-css/react";
+import Link from 'next/link';
+import { styled } from '@linaria/react';
 
 const TopNav = ({ id, slug }) => {
   return (
     <Wrapper>
       <ul>
         <li className="brand">
-          <a href="/nlb-sets/">Home</a>
+          <Link href=".">Home</Link>
         </li>
         {id.map((id) => {
           if (id != slug) {
             return (
               <li key={id}>
-                <a href={"/nlb-sets/" + id}>{id}</a>
+                <Link href={"/" + id}>{id}</Link>
               </li>
             );
           } else {

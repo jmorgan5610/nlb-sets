@@ -1,5 +1,4 @@
-import React from "react";
-import { styled } from "@pigment-css/react";
+import { styled } from "@linaria/react";
 
 const PokePaste = ({ paste }) => {
   if (paste === null) {
@@ -15,8 +14,8 @@ const PokePaste = ({ paste }) => {
   );
 };
 
-export const Wrapper = styled.div`
-  
+const Wrapper = styled.div`
+  padding: 1px;
 `;
 
 export default PokePaste;

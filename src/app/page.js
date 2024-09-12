@@ -1,8 +1,9 @@
 "use client";
 
-import { styled } from "@pigment-css/react";
+import Link from 'next/link';
+import { styled } from '@linaria/react';
 
-import TopNav from "@/components/TopNav/TopNav";
+import TopNav from "@/components/TopNav";
 import data from "./_data/report.json";
 
 export default function Home() {
@@ -14,9 +15,9 @@ export default function Home() {
         {data.map((team) => {
           return (
             <div key={team.id}>
-              <a href={"/nlb-sets/" + team.id} key={team.id}>
+              <Link href={"/" + team.id} key={team.id}>
                 {team.name}
-              </a>
+              </Link>
             </div>
           );
         })}
