@@ -14,10 +14,8 @@ function Page({ params }) {
   return (
     <>
       <TopNav id={data.map((team) => team.id)} slug={team_data.id} />
-      <div>
-        <h1>{team_data.name}</h1>
-        <SetsTable data={team_data.sets} />
-      </div>
+      <h1>{team_data.name}</h1>
+      <SetsTable data={team_data.sets} />
     </>
   );
 }

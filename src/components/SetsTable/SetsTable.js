@@ -38,7 +38,7 @@ export const TableBody = ({ index, data }) => {
 
 const SetsTable = ({ data }) => {
   return (
-    <Wrapper>
+    <Wrapper className="extend">
       <TableHead columns={data["columns"]} />
       <TableBody index={data["index"]} data={data["data"]} />
     </Wrapper>

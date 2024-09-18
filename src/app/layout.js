@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import { styled } from "@linaria/react";
 import "./globals.css";
 
 export const metadata = {
@@ -10,9 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Wrapper>
-          {children}
-        </Wrapper>
+        <Wrapper>{children}</Wrapper>
       </body>
     </html>
   );
@@ -27,6 +25,11 @@ const Wrapper = styled.main`
 
   & > * {
     grid-column: 2;
+  }
+
+  .extend {
+    grid-column: 1 / 4;
+    justify-self: center;
   }
 
   margin-bottom: 64px;
