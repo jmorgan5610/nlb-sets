@@ -22,6 +22,10 @@ const StatBlock = ({ set }) => {
     set.evs = default_evs;
   }
 
+  if (set.nature == null) {
+    set.nature = "hardy";
+  }
+
   const ids = Object.keys(stats);
 
   const gens = new Generations(Dex);
@@ -50,7 +54,7 @@ const StatBlock = ({ set }) => {
       {ids.map((id) => {
         const val = set.ivs[id];
         if (val == default_ivs[id]) {
-          return <DefaultWrapper key={id}>{val}</DefaultWrapper>
+          return <DefaultWrapper key={id}>{val}</DefaultWrapper>;
         }
         return <p key={id}>{val}</p>;
       })}
@@ -59,7 +63,7 @@ const StatBlock = ({ set }) => {
       {ids.map((id) => {
         const val = set.evs[id];
         if (val == default_evs[id]) {
-          return <DefaultWrapper key={id}>{val}</DefaultWrapper>
+          return <DefaultWrapper key={id}>{val}</DefaultWrapper>;
         }
         return <p key={id}>{val}</p>;
       })}
