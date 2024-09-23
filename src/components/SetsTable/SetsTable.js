@@ -53,10 +53,6 @@ const Wrapper = styled.table`
     border: 1px solid;
     padding: 4px;
   }
-
-  td:first-child {
-    font-weight: bold;
-  }
 `;
 
 export default SetsTable;
