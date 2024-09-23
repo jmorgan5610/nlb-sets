@@ -1,1 +1,2 @@
-export { default } from "./PokemonIcon";
+export { PokemonIcon } from "./PokemonIcon";
+export { ItemIcon } from "./PokemonIcon";

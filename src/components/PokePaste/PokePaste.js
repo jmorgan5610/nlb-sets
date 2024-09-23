@@ -2,7 +2,7 @@ import { Sets } from "@pkmn/sets";
 import { Sprites, Icons } from "@pkmn/img";
 import { styled } from "@linaria/react";
 
-import PokemonIcon from "../PokemonIcon";
+import { ItemIcon, PokemonIcon } from "../PokemonIcon";
 import CopyButton from "../CopyButton";
 
 const PokePaste = ({ paste }) => {
@@ -17,6 +17,7 @@ const PokePaste = ({ paste }) => {
       <HorizontalWrapper>
         <IconButton>
           <PokemonIcon name={set.species} />
+          <ItemWrapper>{set.item && <ItemIcon item={set.item} />}</ItemWrapper>
         </IconButton>
         <h3>{set.species}</h3>
         <CopyButton text={paste} />
@@ -26,9 +27,9 @@ const PokePaste = ({ paste }) => {
         <p>Ability</p>
         <p>Nature</p>
         <p>Item</p>
-        <div className="callout">{set.ability}</div>
-        <div className="callout">{set.nature}</div>
-        <div className="callout">{set.item}</div>
+        <Callout>{set.ability}</Callout>
+        <Callout>{set.nature}</Callout>
+        <Callout>{set.item}</Callout>
       </InfoBlock>
 
       <div>
@@ -61,9 +62,9 @@ const PokePaste = ({ paste }) => {
 
       {set.moves.map((move) => {
         return (
-          <div className="callout" key={move}>
+          <Callout key={move}>
             {move}
-          </div>
+          </Callout>
         );
       })}
     </Wrapper>
@@ -93,11 +94,6 @@ const Wrapper = styled.div`
     content: " / ";
   }
 
-  .name {
-    display: flex;
-    align-items: center;
-  }
-
   .callout {
     background-color: var(--theme-callout-bg);
     border: 1px solid var(--theme-callout-border);
@@ -109,17 +105,7 @@ const Wrapper = styled.div`
 const HorizontalWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 4px
-`;
-
-const InfoBlock = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 0px 4px;
-
-  p {
-    padding: 0 0.5rem;
-  }
+  gap: 4px;
 `;
 
 const IconButton = styled.button`
@@ -134,6 +120,31 @@ const IconButton = styled.button`
   position: relative;
   border-radius: 100%;
   background: inherit;
+`;
+
+const ItemWrapper = styled.div`
+  position: absolute;
+  right: -7%;
+  bottom: -17%;
+  opacity: 0.8;
+  transform: scale(0.75);
+`;
+
+const InfoBlock = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0px 4px;
+
+  p {
+    padding: 0 0.5rem;
+  }
+`;
+
+const Callout = styled.div`
+  background-color: var(--theme-callout-bg);
+  border: 1px solid var(--theme-callout-border);
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
 `;
 
 export default PokePaste;

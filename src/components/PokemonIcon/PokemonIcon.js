@@ -1,7 +1,19 @@
 import { styled } from "@linaria/react";
 import { Icons } from "@pkmn/img";
 
-const PokemonIcon = ({ name }) => {
+export const ItemIcon = ({ item }) => {
+  const { style, url, left, top, css } = Icons.getItem(item);
+
+  return (
+    <Wrapper
+      width={css.width}
+      height={css.height}
+      background={css.background}
+    />
+  );
+}
+
+export const PokemonIcon = ({ name }) => {
   const { style, url, left, top, css } = Icons.getPokemon(name);
 
   return (
@@ -21,4 +33,4 @@ const Wrapper = styled.div`
   background: ${(props) => props.background};
 `;
 
-export default PokemonIcon;
+// export default PokemonIcon;
