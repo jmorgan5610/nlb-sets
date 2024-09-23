@@ -74,12 +74,13 @@ const StatBlock = ({ set }) => {
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(7, auto);
-  align-items: center;
+  justify-content: center;
+  justify-items: center;
   column-gap: 8px;
   text-align: center;
 
   :nth-child(7n + 1) {
-    text-align: right;
+    justify-self: end;
   }
 `;
 
