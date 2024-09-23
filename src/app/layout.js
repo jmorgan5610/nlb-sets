@@ -17,20 +17,7 @@ export default function RootLayout({ children }) {
 }
 
 const Wrapper = styled.main`
-  display: grid;
-  grid-template-columns:
-    1fr
-    min(85ch, 100%)
-    1fr;
-
-  & > * {
-    grid-column: 2;
-  }
-
-  .extend {
-    grid-column: 1 / 4;
-    justify-self: center;
-  }
-
+  display: flex;
+  flex-direction: column;
   margin-bottom: 64px;
 `;

@@ -1,3 +1,5 @@
+import { styled } from "@linaria/react";
+
 import TopNav from "@/components/TopNav";
 import SetsTable from "@/components/SetsTable";
 
@@ -14,12 +16,17 @@ function Page({ params }) {
   return (
     <>
       <TopNav id={data.map((team) => team.id)} slug={team_data.id} />
-      <div className="extend">
+      <Wrapper>
         <h1>{team_data.name}</h1>
         <SetsTable data={team_data.sets} />
-      </div>
+      </Wrapper>
     </>
   );
 }
+
+const Wrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+`
 
 export default Page;

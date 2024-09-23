@@ -1,4 +1,4 @@
-import { styled } from '@linaria/react';
+import { styled } from "@linaria/react";
 
 import PokePaste from "../PokePaste";
 
@@ -6,7 +6,6 @@ export const TableHead = ({ columns }) => {
   return (
     <thead>
       <tr>
-        <th></th>
         {columns.map((opponent) => {
           return <th key={opponent}>{opponent}</th>;
         })}
@@ -21,12 +20,9 @@ export const TableBody = ({ index, data }) => {
       {index.map((name, name_idx) => {
         return (
           <tr key={name}>
-            <td key={name}>{name}</td>
             {data[name_idx].map((set, key) => {
               return (
-                <td key={key}>
-                  <PokePaste paste={set} />
-                </td>
+                <td key={key}>{set !== null && <PokePaste paste={set} />}</td>
               );
             })}
           </tr>

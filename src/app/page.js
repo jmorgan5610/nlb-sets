@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <TopNav id={data.map((team) => team.id)} />
-      <div>
+      <Wrapper>
         <h1>Teams</h1>
         {data.map((team) => {
           return (
@@ -21,7 +21,16 @@ export default function Home() {
             </div>
           );
         })}
-      </div>
+      </Wrapper>
     </>
   );
 }
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr min(85ch, 100%) 1fr;
+
+  & > * {
+    grid-column: 2;
+  }
+`
