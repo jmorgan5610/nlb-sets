@@ -314,7 +314,8 @@
             "columns": [
                 "Week 1 vs Bethlehem Brelooms",
                 "Week 2 vs Milesburg Magbys",
-                "Week 3 vs Detroit Dukburgs"
+                "Week 3 vs Detroit Dukburgs",
+                "Week 4 vs Main Line Mankeys"
             ],
             "data": [
                 [
@@ -340,6 +341,17 @@
                         "- Stored Power",
                         "- Calm Mind",
                         "- Iron Defense"
+                    ],
+                    [
+                        "Klefki (F) @ Leftovers",
+                        "Ability: Prankster",
+                        "EVs: 252 HP / 88 Def / 168 SpD",
+                        "Calm Nature",
+                        "IVs: 0 Atk",
+                        "- Draining Kiss",
+                        "- Stored Power",
+                        "- Calm Mind",
+                        "- Spikes"
                     ]
                 ],
                 [
@@ -354,7 +366,17 @@
                         "- Throat Chop"
                     ],
                     null,
-                    null
+                    null,
+                    [
+                        "Tauros (M) @ Life Orb",
+                        "Ability: Sheer Force",
+                        "EVs: 240 HP / 252 Atk / 16 Spe",
+                        "Jolly Nature",
+                        "- Facade",
+                        "- High Horsepower",
+                        "- Rock Slide",
+                        "- Iron Head"
+                    ]
                 ],
                 [
                     [
@@ -386,7 +408,8 @@
                         "- Brave Bird",
                         "- U-turn",
                         "- Roost"
-                    ]
+                    ],
+                    null
                 ],
                 [
                     [
@@ -418,6 +441,16 @@
                         "- U-turn",
                         "- Toxic",
                         "- Spikes"
+                    ],
+                    [
+                        "Gligar (F) @ Eviolite",
+                        "Ability: Immunity",
+                        "EVs: 252 HP / 236 SpD / 20 Spe",
+                        "Impish Nature",
+                        "- High Horsepower",
+                        "- U-turn",
+                        "- Toxic",
+                        "- Spikes"
                     ]
                 ],
                 [
@@ -443,6 +476,17 @@
                         "- Endure",
                         "- Roost",
                         "- Defog"
+                    ],
+                    [
+                        "Cramorant (M) @ Heavy-Duty Boots",
+                        "Ability: Gulp Missile",
+                        "EVs: 40 HP / 252 SpA / 216 Spe",
+                        "Timid Nature",
+                        "IVs: 0 Atk",
+                        "- Surf",
+                        "- Ice Beam",
+                        "- Endure",
+                        "- Roost"
                     ]
                 ],
                 [
@@ -475,6 +519,16 @@
                         "- Gunk Shot",
                         "- Substitute",
                         "- Toxic"
+                    ],
+                    [
+                        "Skuntank (F) @ Black Sludge",
+                        "Ability: Aftermath",
+                        "EVs: 84 HP / 200 Atk / 224 Spe",
+                        "Jolly Nature",
+                        "- Knock Off",
+                        "- Gunk Shot",
+                        "- Protect",
+                        "- Taunt"
                     ]
                 ],
                 [
@@ -499,6 +553,16 @@
                         "- Focus Blast",
                         "- Dragon Pulse",
                         "- Roar"
+                    ],
+                    [
+                        "Ampharos (F) @ Leftovers",
+                        "Ability: Static",
+                        "EVs: 252 HP / 248 Def / 8 Spe",
+                        "Modest Nature",
+                        "- Discharge",
+                        "- Focus Blast",
+                        "- Dragon Tail",
+                        "- Cotton Guard"
                     ]
                 ],
                 [
@@ -524,6 +588,7 @@
                         "- Energy Ball",
                         "- Dazzling Gleam"
                     ],
+                    null,
                     null
                 ]
             ]
@@ -835,7 +900,7 @@
                 "Dusknoir",
                 "Muk",
                 "Clawitzer",
-                "Sliggoo-Hisui",
+                "Crabominable",
                 "Houndoom"
             ],
             "columns": [
@@ -1812,7 +1877,8 @@
             "columns": [
                 "Week 1 vs Quad City Milkmen",
                 "Week 2 vs Park Slope Porygons",
-                "Week 3 vs Santa Rosa Smoochums"
+                "Week 3 vs Santa Rosa Smoochums",
+                "Week 4 vs Clear Creek Clodsires"
             ],
             "data": [
                 [
@@ -1845,6 +1911,16 @@
                         "- Knock Off",
                         "- Aerial Ace",
                         "- Icicle Crash"
+                    ],
+                    [
+                        "Sneasel (F) @ Heavy-Duty Boots",
+                        "Ability: Inner Focus",
+                        "EVs: 252 Atk / 40 SpD / 216 Spe",
+                        "Jolly Nature",
+                        "- Icicle Crash",
+                        "- Knock Off",
+                        "- Ice Shard",
+                        "- Swords Dance"
                     ]
                 ],
                 [
@@ -1870,6 +1946,17 @@
                         "- Flash Cannon",
                         "- Tri Attack",
                         "- Volt Switch"
+                    ],
+                    [
+                        "Magneton @ Eviolite",
+                        "Ability: Magnet Pull",
+                        "EVs: 252 HP / 4 Def / 252 SpA",
+                        "Modest Nature",
+                        "IVs: 0 Atk",
+                        "- Thunderbolt",
+                        "- Flash Cannon",
+                        "- Iron Defense",
+                        "- Rest"
                     ]
                 ],
                 [
@@ -1905,6 +1992,16 @@
                         "- Defog",
                         "- Will-O-Wisp",
                         "- Roost"
+                    ],
+                    [
+                        "Altaria (F) @ Heavy-Duty Boots",
+                        "Ability: Natural Cure",
+                        "EVs: 252 Atk / 4 Def / 252 Spe",
+                        "Jolly Nature",
+                        "- Outrage",
+                        "- Earthquake",
+                        "- Roost",
+                        "- Dragon Dance"
                     ]
                 ],
                 [
@@ -1937,6 +2034,17 @@
                         "- Crunch",
                         "- Spikes",
                         "- Toxic Spikes"
+                    ],
+                    [
+                        "Qwilfish-Hisui (M) @ Rocky Helmet",
+                        "Ability: Intimidate",
+                        "EVs: 252 HP / 4 Def / 252 SpD",
+                        "Calm Nature",
+                        "IVs: 0 Atk",
+                        "- Spikes",
+                        "- Ice Beam",
+                        "- Haze",
+                        "- Pain Split"
                     ]
                 ],
                 [
@@ -1972,9 +2080,21 @@
                         "- Calm Mind",
                         "- Wish",
                         "- Protect"
+                    ],
+                    [
+                        "Wigglytuff (F) @ Leftovers",
+                        "Ability: Competitive",
+                        "EVs: 252 HP / 252 Def / 4 SpD",
+                        "Bold Nature",
+                        "IVs: 0 Atk",
+                        "- Alluring Voice",
+                        "- Flamethrower",
+                        "- Calm Mind",
+                        "- Wish"
                     ]
                 ],
                 [
+                    null,
                     null,
                     null,
                     null
@@ -2000,6 +2120,7 @@
                         "- Stealth Rock",
                         "- Rapid Spin"
                     ],
+                    null,
                     null
                 ],
                 [
@@ -2014,7 +2135,17 @@
                         "- Switcheroo",
                         "- U-turn"
                     ],
-                    null
+                    null,
+                    [
+                        "Aipom (M) @ Choice Band",
+                        "Ability: Skill Link",
+                        "EVs: 252 Atk / 4 Def / 252 Spe",
+                        "Jolly Nature",
+                        "- Double-Edge",
+                        "- Thunder Punch",
+                        "- Switcheroo",
+                        "- U-turn"
+                    ]
                 ],
                 [
                     null,
@@ -2029,7 +2160,8 @@
                         "- Overheat",
                         "- Flamethrower",
                         "- Extrasensory"
-                    ]
+                    ],
+                    null
                 ]
             ]
         }
